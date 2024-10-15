@@ -5,6 +5,10 @@ const tasksFilePath = path.join(__dirname, "tasks.json");
 function addTask() {
     console.log("in add task");
 }
+
+
+
+// Main Functionality to interact with CLI
 const args = process.argv.slice(2);
 // Add task
 if (args.includes("add")) {
@@ -40,17 +44,17 @@ else if (args.includes("list")) {
 
 }
 else {
-    console.log();
-    console.log("Task Tracker input options");
-    console.log("node index.js <command> [arguments] ");
-    console.log();
-    console.log("Commands:");
-    console.log("add <task description> ");
-    console.log("update <id> <new description> ");
-    console.log("delete <id> ");
-    console.log("mark-in-progress <id>");
-    console.log("mark-done <id> ");
-    console.log("list [status] (includes done, todo, in-progress)");
-    console.log();
+    console.log("|================================================|");
+    console.log("|Task Tracker input options                      |");
+    console.log("|node index.js <command> [arguments]             |");
+    console.log("|================================================|");
+    console.log("|Commands:                                       |");
+    console.log("|add <task description>                          |");
+    console.log("|update <id> <new description>                   |");
+    console.log("|delete <id>                                     |");
+    console.log("|mark-in-progress <id>                           |");
+    console.log("|mark-done <id>                                  |");
+    console.log("|list [status] (includes done, todo, in-progress)|");
+    console.log("|================================================|");
 
 }
